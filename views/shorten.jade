@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  .container
+  h1= title
+  P Welcome to #{title}
+  p#error
+  form(method="POST", action="/shortenurl/")
+    p Long URL
+      br
+      input(type="url", name="longUrl")
+    p
+      input.btn.btn-success(type="submit") 
+    script(src='/javascripts/shorten.js')

@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  .container
+  h1= title
+  P Welcome to #{title}
+  p#error
+  form(method="POST", action="/users/login")
+    p Email
+      br
+      input(type="email", name="email")
+    p Password
+      br
+      input(type="password", name="password")
+      br
+    p
+      input.btn.btn-success(type="submit") 
+      a.btn.btn-primary(href="/google/auth") Google  
+      a.btn.btn-primary(href="/home/register") Sign up
+    script(src='/javascripts/login.js')
