@@ -16,6 +16,6 @@ spec:
                 app: frontend
         spec:
             containers:
-            - image: magalixcorp/sample-api:v1
+            - image: nginx
               imagePullPolicy: IfNotPresent
               name: frontend
