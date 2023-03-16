@@ -5,6 +5,7 @@ metadata:
     labels:
         app: frontend
     name: frontend-svc
+    namespace: wordpress
 spec:
     ports:
     - port: 3000
